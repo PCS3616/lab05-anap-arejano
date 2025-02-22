@@ -2,7 +2,7 @@
     FIM HM /0000
 
     QUADRADOS JP FIM
-    LD N ; carrega N
+    LOOP LD N ; carrega N
     SB MEIA_TRES ; subtrai 63 de N
     JZ FIM_SUBROTINA ; jump se for zero 
     LD DOIS; carrega 2 no ac
@@ -17,7 +17,7 @@
     LD N ;
     AD UN ;
     MM N ;
-    JP QUADRADOS;
+    JP LOOP;
 
     FIM_SUBROTINA RS QUADRADOS
 
