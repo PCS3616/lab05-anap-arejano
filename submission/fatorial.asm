@@ -3,7 +3,7 @@
     SC FATORIAL ; chama a subrotina
 FIM:    HM ; fim
 
-    @ 0F00
+    @ /0F00
 FATORIAL: JP FIM
     LD 0100;
     JZ FIM_ZERO
@@ -22,6 +22,5 @@ FIM_SUBROTINA:    RS FATORIAL ; fim da subrotina
     MM 0102; guarda resultado final
 FIM_SUBROTINA_ZERO    RS FATORIAL; fim da subrotina 
 
-@ 0106
-
-0106 0001; UM
+@ /0106
+    K = 1; UM
